@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Validation Form</h1>
+    <p>Please fill out this form with required information.</p>
+    <form action="#">
+       <fieldset>
+          <label for="name">Enter Your Name : <input type="text" name="name" id="name" required></label>
+          <label for="email">Enter Your Email: <input type="email" name="email" id="emial" required></label>
+          <label for="number">Enter Your Phone: <input type="tel" name="number" id="number"></label>
+          <label for="password">Enter Your Password <input type="password" name="password" id="password" pattern="[a-z0-9]{,8}" required></label>
+          <label for="age">Enter Your Age <input type="number" name="age" id="age" min="18" max="90" required></label>
+          <h3>Select Your Gender</h3>
+          <label for="male">Male <input class="inline" type="radio" name="gender-type" id="male" required></label>
+          <label for="female">Female <input class="inline" type="radio" name="gender-type" id="female"required></label>
+          <label for="transgender">Transgender<input  class="inline" type="radio" name="gender-type" id="transgender" required></label>
+          <label for="other">Other <input  class="inline" type="radio" name="gender-type" id="other" required></label>
+          <label for="date">Enter Date <input type="date" name="date" id="date" required></label>
+          <label for="color">Pick Your Color<input type="color" name="color" id="color"></label>
+       </fieldset>
+       <label for="accept">Accept Term and Conditons<input type="checkbox" name="accept" id="accept" class="inline" required></label>
+       <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
